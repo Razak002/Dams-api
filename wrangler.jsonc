@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dams-api",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-14",
+  "compatibility_flags": ["nodejs_compat"],
+  "keep_vars": true,
+  "triggers": {
+    "crons": ["*/15 * * * *"]
+  }
+}
